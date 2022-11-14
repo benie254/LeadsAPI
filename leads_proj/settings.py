@@ -67,7 +67,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'rest_framework',
-    'knox'
+    'knox',
+    'bootstrap5',
 ]
 
 REST_FRAMEWORK = {
