@@ -70,7 +70,7 @@ INSTALLED_APPS = [
     'knox',
     'bootstrap5',
     'bootstrap_email',
-    # 'django_pretty_mails',
+    'corsheaders',
 ]
 
 REST_FRAMEWORK = {
@@ -101,6 +101,13 @@ REST_KNOX = {
   'AUTO_REFRESH': False,
 }
 
+CORS_ORIGIN_ALLOW_ALL = False
+CORS_ORIGIN_WHITELIST = (
+    'http://localhost:8000',
+    'http://localhost:4200',
+    'http://127.0.0.1:8000',
+)
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -110,6 +117,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
 ]
 
 MIDDLEWARE_CLASSES = (
