@@ -1,0 +1,23 @@
+{%load static%} 
+{%load bootstrap5%}
+<div class="container">
+    <p>You have a new subscriber on HeartSnArt.</p>
+    <p>Here is their information:</p>
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{name}}</td>
+                <td>{{email}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+    <p>You can check out more leads for the above subscriber <button class="btn btn-dark btn-outline-info">here</button></p>
+</div>
