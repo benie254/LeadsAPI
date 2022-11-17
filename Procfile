@@ -1,0 +1,1 @@
+web: gunicorn leads_proj.wsgi --log-file -
