@@ -12,6 +12,7 @@ django-heroku==0.3.1
 django-rest-knox==4.2.0
 djangorestframework==3.14.0
 idna==3.4
+psycopg2-binary==2.9.5
 pycparser==2.21
 python-decouple==3.6
 python-http-client==3.3.7
